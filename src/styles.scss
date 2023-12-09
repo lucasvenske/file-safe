@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import './assets/css/variables';
+
+$--bs-secondary-rgb: $secondary;
+$table-border-width: 0.4px;
+
+@import './assets/css/theme';
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

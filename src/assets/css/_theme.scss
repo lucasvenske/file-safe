@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@100;200;300;400;500;700&display=swap');
+
+body {
+    font-family: 'Pathway Extreme', sans-serif !important;
+}
+
+.bg-extra-dark {
+    background-color: $extra-dark !important;
+}
+
+.bg-semi-dark {
+    background-color: $semi-dark !important;
+}
+
+.bg-dark-blue {
+    background-color: $dark-blue !important;
+}
+
+.caret {
+    color: white !important;
+}
+
+label::after {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.pointer {
+    cursor: pointer !important;
+}
+
+.w-100-px {
+    width: 100px !important;
+}
+
+.w-50-px {
+    width: 50px !important;
+}
+
+.wh-50-px {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.wh-40-px {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.wh-35-px {
+    width: 35px !important;
+    height: 35px !important;
+}
+
+.wh-25-px {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.w-15-px {
+    width: 15px !important;
+}
+
+.w-10-px {
+    width: 10px !important;
+}
+
+.h-400 {
+    height: 400px !important;
+}
+
+.h-500-px {
+    height: 500px !important;
+}
+
+.h-35 {
+    height: 35px !important;
+}
+
+.w-190-px {
+    width: 190px;
+}
+
+.w-270-px {
+    width: 270px;
+}
+
+.w-400-px {
+    width: 400px;
+}
+
+.reset-button {
+    right: 20px;
+    bottom: 30px;
+
+    i {
+        -webkit-text-stroke: 1px;
+    }
+
+    &:hover .btn {
+        background-color: $secondary !important;
+
+        i {
+            color: white !important;
+        }
+    }
+}
+
+.btn-hover:hover {
+    opacity: 0.8;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    border-color: $secondary !important;
+}
+
+//Reset Css
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: $dark;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
