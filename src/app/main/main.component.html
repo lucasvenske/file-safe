@@ -1,0 +1,55 @@
+<app-header></app-header>
+<div class="mt-5 container-sm">
+    <div class="mb-3">
+        <button class="btn btn-md btn-outline-secondary fw-bold bi bi-plus" (click)="addFile()">
+            Add new
+        </button>
+    </div>
+    <div class="rounded border overflow-hidden shadow">
+        <table class="table table-dark m-0 table-hover">
+            <thead class="text-dark">
+                <tr class="border-bottom">
+                    <th class="bg-secondary fw-semi-bold text-dark col-4" scope="col">File name:</th>
+                    <th class="bg-secondary fw-semi-bold text-dark col-2" scope="col">Size:</th>
+                    <th class="bg-secondary fw-semi-bold text-dark col-2" scope="col">Type:</th>
+                    <th class="bg-secondary col-2" scope="col"></th>
+                </tr>
+            </thead>
+            <tbody class="text-white">
+                @for (file of files; track $index) {
+                    <tr>
+                        <td>{{file.name}}</td>
+                        <td>{{file.size | filesize}}</td>
+                        <td>{{file.type}}</td>
+                        <td>
+                            <button type="button" class="btn btn-sm btn-outline-secondary bi bi-download ms-2" (click)="download(file)"></button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary bi bi-trash-fill ms-2" (click)="removeFile($index)"></button>
+                        </td>
+                    </tr>
+                } 
+                <tr>
+                    <td>teste.pdf</td>
+                    <td>{{161231 | filesize}}</td>
+                    <td>pdf</td>
+                    <td>
+                        <button type="button" class="btn btn-sm btn-outline-secondary bi bi-download ms-2"></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary bi bi-trash-fill ms-2"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>second.docx</td>
+                    <td>{{65489 | filesize}}</td>
+                    <td>pdf</td>
+                    <td>
+                        <button type="button" class="btn btn-sm btn-outline-secondary bi bi-download ms-2"></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary bi bi-trash-fill ms-2"></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<app-modal id="file-upload" [width]="700" [height]="400">
+    <app-file-upload></app-file-upload>
+</app-modal>
